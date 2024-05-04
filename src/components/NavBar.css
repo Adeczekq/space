@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  margin-top: 40px;
+  gap: 36px;
+  color: white;
+  width: 60%;
+  flex-wrap: wrap;
+  position: relative;
+}
+.stripe {
+  width: 55%;
+  height: 1px;
+  background-color: #979797;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+}
+.logo {
+  position: absolute;
+  left: -60%;
+}
+.number {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  margin-right: 8px;
+
+}
+.name {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: white solid 4px;
+  transition: all 150ms ease;
+  height: 96%;
+  text-align: center;
+}
+.nav-item {
+  display: flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-nav-nonActive:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 4px;
+  border-color: rgba(255, 255, 255, 0.5);
+  height: 96%;
+  transition: all 150ms ease;
+}
+@media (max-width: 1024px) {
+  .stripe {
+    display: none !important;
+  }
+  .number{
+    font-size:0.875rem;
+  }
+  .name{
+    font-size:0.875rem;}
+}
